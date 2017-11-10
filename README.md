@@ -6,4 +6,5 @@
 - Added header to Search component. Will contain page header.
 - Increase number of Advanced search fields.
 - Details modal now has scroll bar on modal body. This avoids a scroll bar on the browser.
-[Demo page](kc-casa.surge.sh)
+
+[Demo page](https://kc-casa.surge.sh)
