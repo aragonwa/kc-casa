@@ -79,7 +79,10 @@ class App extends Component {
               aria-controls="collapseAdvancedSearch"
               data-original-title="Toggle advance search"
             >
+              <span className="badge badge-pill badge-dark">
+              Advanced &nbsp;
               <span className="fa fa-cog" />
+              </span>
             </button>
             <form>
               <p className="h2">Search by cases</p>
