@@ -5,7 +5,7 @@ import DetailsModal from './DetailsModal';
 
 import "bootstrap";
 import DatePicker from 'react-datepicker';
-import moment from 'moment';
+// import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import "./App.css";
  
@@ -295,7 +295,7 @@ class App extends Component {
         <div className={this.state.displayTable ? "" : "d-none"} id="results">
           <h3>Results</h3>
             <div className="hi">
-            <table className="table table-striped table-bordered table-responsive">
+            <table className="table table-striped table-bordered table-responsive-sm">
               <thead>
                 <tr>
                   <th scope="col">Legal number</th>
