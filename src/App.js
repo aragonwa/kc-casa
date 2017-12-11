@@ -71,7 +71,9 @@ class App extends Component {
             <h1>CASA Information System</h1>
           </div>
           <div className="card-body">
-            <button
+            
+            <form style={{position: "relative"}}>
+            <a
               className="btn-advSearch btn btn-lg"
               data-toggle="collapse"
               href="#collapseAdvancedSearch"
@@ -83,8 +85,7 @@ class App extends Component {
               Advanced &nbsp;
               <span className="fa fa-cog" />
               </span>
-            </button>
-            <form>
+            </a>
               <p className="h2">Search by cases</p>
               <div className="form-row">
                 <div className="col-sm-6">
