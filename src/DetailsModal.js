@@ -71,8 +71,8 @@ const DetailsModal = () => {
                     <div className="card-body">
                       <div className="card-deck">
                         <div className="card">
-                          <div className="card-header">
-                          Case
+                          <div className="card-header bg-secondary text-white">
+                            Case
                           </div>
                           <div className="card-body">
                             <p className="card-text">
@@ -82,15 +82,13 @@ const DetailsModal = () => {
                               <dd>Drugs</dd>
                             </p>
                           </div>
-                          
                         </div>
 
                         <div className="card">
-                          <div className="card-header">
-                          CASA
-                            </div>
+                          <div className="card-header bg-secondary text-white">
+                            CASA
+                          </div>
                           <div className="card-body">
-                           
                             <dt>CASA name</dt>
                             <dd>Sharon Doak</dd>
                             <dt>CS</dt>
@@ -102,6 +100,85 @@ const DetailsModal = () => {
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div
+                    className="card-header"
+                    role="tab"
+                    id="headingCasePersons"
+                  >
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapseCasePersons"
+                        aria-expanded="false"
+                        aria-controls="collapseCasePersons"
+                      >
+                        Case Persons
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseCasePersons"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingCasePersons"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      <table className="table table-responsive-sm table-striped table-bordered table-hover">
+                        <thead className="thead-light">
+                          <tr>
+                            <th scope="col">Role</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Firm/Agency</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Fax</th>
+                            <th scope="col">Home Phone</th>
+                            <th scope="col">Work Phone</th>
+                            <th scope="col">Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>AGG</td>
+                            <td>Mary</td>
+                            <td>Li</td>
+                            <td>AAG</td>
+                            <td>mary@email.com</td>
+                            <td>201-222-2222</td>
+                            <td></td>
+                            <td>201-222-2222</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                          <td>Child Attorney</td>
+                          <td>Meg</td>
+                          <td>While</td>
+                          <td>Defenders</td>
+                          <td>Meg@email.com</td>
+                          <td>201-222-2222</td>
+                          <td></td>
+                          <td>201-222-2222</td>
+                          <td>111 First Rd</td>
+                          </tr>
+                          <tr>
+                          <td>Social worker</td>
+                          <td>Bob</td>
+                          <td>Vance</td>
+                          <td>DCHS</td>
+                          <td>bob@email.com</td>
+                          <td>201-222-2222</td>
+                          <td></td>
+                          <td>201-222-2222</td>
+                          <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
