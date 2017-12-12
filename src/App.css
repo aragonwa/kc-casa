@@ -5872,7 +5872,7 @@ body {
 
 .card-body .btn-advSearch {
   position: absolute;
-  /* top: .5rem; */
+  top: .5rem;
   right: .5rem;
   z-index: 10;
   display: block;
