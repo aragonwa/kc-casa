@@ -35,12 +35,16 @@ const DetailsModal = () => {
             </div>
             <div className="col-sm-6">
               <dl className="row">
+                <dt className="col-sm-4">Child age at file</dt>
+                <dd className="col-sm-8">7 years 5 months</dd>
                 <dt className="col-sm-4">Legal number</dt>
                 <dd className="col-sm-8">00-7-00305-4</dd>
                 <dt className="col-sm-4">Pending number</dt>
                 <dd className="col-sm-8">1111</dd>
                 <dt className="col-sm-4">Case number</dt>
                 <dd className="col-sm-8">22222</dd>
+                <dt className="col-sm-4">Case Status</dt>
+                <dd className="col-sm-8">Active</dd>
               </dl>
             </div>
           </div>
@@ -72,14 +76,35 @@ const DetailsModal = () => {
                       <div className="card-deck">
                         <div className="card">
                           <div className="card-header bg-secondary text-white">
+                            Child
+                          </div>
+                          <div className="card-body">
+                            <p className="card-text">
+                              <dt>Language</dt>
+                              <dd>English</dd>
+                              <dt>Interpreter needed</dt>
+                              <dd>no</dd>
+                              <dt>Tribe</dt>
+                              <dd>N/A</dd>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="card">
+                          <div className="card-header bg-secondary text-white">
                             Case
                           </div>
                           <div className="card-body">
                             <p className="card-text">
                               <dt>Case status</dt>
-                              <dd>Pending</dd>
+                              <dd>Active</dd>
                               <dt>Case type</dt>
                               <dd>Drugs</dd>
+                              <dt>Active sub status</dt>
+                              <dd></dd>
+                              <dt>ICWA</dt>
+                              <dd>Unknown</dd>
+                              <dt>File location</dt>
+                              <dd>Seattle</dd>
                             </p>
                           </div>
                         </div>
@@ -91,15 +116,56 @@ const DetailsModal = () => {
                           <div className="card-body">
                             <dt>CASA name</dt>
                             <dd>Sharon Doak</dd>
+                            <dt>Assign date</dt>
+                            <dd>01/12/2012</dd>
                             <dt>CS</dt>
                             <dd>Rie Takeuchi</dd>
                             <dt>Assign date</dt>
                             <dd>01/12/2012</dd>
                             <dt>Termination number</dt>
                             <dd>11-1-11111-1</dd>
+                            <dt>Exit date</dt>
+                            <dd>11/11/1111</dd>
+                            <dt>File purge date</dt>
+                            <dd>11/11/1111</dd>
+                            <dt>DCFS units</dt>
+                            <dd>Adoption/BRS</dd>
                           </div>
                         </div>
                       </div>
+                      <br />
+                      <br />
+                      <div className="card-deck">
+                        <div className="card">
+                          <div className="card-header bg-secondary text-white">
+                            Parents
+                          </div>
+                          <div className="card-body">
+                            <dt>Mom Term. date</dt>
+                            <dd>06/01/2000</dd>
+                            <dt>Mom Dep. Est. Date</dt>
+                            <dd>01/01/2000</dd>
+                            <dt>Dad Term. date</dt>
+                            <dd>06/01/2000</dd>
+                            <dt>Dad Dep. Est. Date</dt>
+                            <dd>01/01/2000</dd>
+
+                          </div>
+                        </div>
+                        <div className="card">
+                          <div className="card-header bg-secondary text-white">
+                            Notes
+                          </div>
+                          <div className="card-body">
+                            <p>Lorem ipsum dolor sit amet, sanctus voluptatibus mel cu, eu nam enim dicat everti. Ex pri choro nonumes, exerci disputando complectitur mei ut, qui dicat petentium in. Graecis apeirian neglegentur cu his. Per cu alii solum probatus. Quodsi habemus invidunt at his, ullum erant laboramus eu duo.
+                            </p>
+                            <p>At nec solum error, tantas quodsi vis ex. Mucius albucius legendos his et. Mel in sale bonorum scaevola. An animal labitur tacimates sit, eos veniam fierent deterruisset id, in impetus invenire efficiendi his. Duo velit albucius lobortis no.
+
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
