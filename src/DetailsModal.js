@@ -249,6 +249,42 @@ const DetailsModal = () => {
                   </div>
                 </div>
                 <div className="card">
+                  <div className="card-header" role="tab" id="headingAddRemoveCASA">
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapseAddRemoveCASA"
+                        aria-expanded="false"
+                        aria-controls="collapseAddRemoveCASA"
+                      >
+                        Add/Remove CASA
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseAddRemoveCASA"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingAddRemoveCASA"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
                   <div className="card-header" role="tab" id="headingGAL">
                     <h5 className="mb-0">
                       <a
@@ -285,6 +321,42 @@ const DetailsModal = () => {
                   </div>
                 </div>
                 <div className="card">
+                  <div className="card-header" role="tab" id="headingIntakeDetail">
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapseIntakeDetail"
+                        aria-expanded="false"
+                        aria-controls="collapseIntakeDetail"
+                      >
+                        Intake Detail
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseIntakeDetail"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingIntakeDetail"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
                   <div className="card-header" role="tab" id="headingSlibling">
                     <h5 className="mb-0">
                       <a
@@ -303,6 +375,186 @@ const DetailsModal = () => {
                     className="collapse"
                     role="tabpanel"
                     aria-labelledby="headingSlibling"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-header" role="tab" id="headingEvent">
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapseEvent"
+                        aria-expanded="false"
+                        aria-controls="collapseEvent"
+                      >
+                        Event
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseEvent"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingEvent"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-header" role="tab" id="headingCaseStatusHistory">
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapseCaseStatusHistory"
+                        aria-expanded="false"
+                        aria-controls="collapseCaseStatusHistory"
+                      >
+                        Case Status History
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseCaseStatusHistory"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingCaseStatusHistory"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-header" role="tab" id="headingCasaHistory">
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapseCasaHistory"
+                        aria-expanded="false"
+                        aria-controls="collapseCasaHistory"
+                      >
+                        Casa History
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseCasaHistory"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingCasaHistory"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-header" role="tab" id="headingCaseNotes">
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapseCaseNotes"
+                        aria-expanded="false"
+                        aria-controls="collapseCaseNotes"
+                      >
+                        Case Notes
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseCaseNotes"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingCaseNotes"
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-header" role="tab" id="headingPriority">
+                    <h5 className="mb-0">
+                      <a
+                        className="collapsed"
+                        data-toggle="collapse"
+                        href="#collapsePriority"
+                        aria-expanded="false"
+                        aria-controls="collapsePriority"
+                      >
+                        Priority
+                      </a>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapsePriority"
+                    className="collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingPriority"
                     data-parent="#accordion"
                   >
                     <div className="card-body">
