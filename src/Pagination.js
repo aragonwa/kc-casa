@@ -5,7 +5,7 @@ const Pagination = props => {
   <nav aria-label="pagination">
     <ul className="pagination justify-content-center">
       <li className="page-item disabled">
-        <a className="page-link" href="#" tabindex="-1">
+        <a className="page-link" href="#" tabIndex="-1">
           Previous
         </a>
       </li>
