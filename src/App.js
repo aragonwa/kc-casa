@@ -31,14 +31,14 @@ class App extends Component {
     this.toggleAdvSearchText = this.toggleAdvSearchText.bind(this);
   }
   componentDidUpdate(prevProps, prevState) {
-    document.getElementById("results").scrollIntoView({ behavior: "smooth" });
+    // document.getElementById("results").scrollIntoView({ behavior: "smooth" });
   }
   setActiveButton(btnText) {
-    this.setState({ activeBtn: btnText });
+    this.setState({ activeBtn: btnText});
   }
   displayTable(e) {
     e.preventDefault();
-    this.setState({ displayTable: true });
+    this.setState({displayTable: true});
   }
   toggleAdvSearchText(e) {
     e.preventDefault();
@@ -59,6 +59,7 @@ class App extends Component {
       startDate4: date
     });
   }
+
   render() {
     return (
       <div className="App">
@@ -66,16 +67,21 @@ class App extends Component {
          
           <div className="card-body">
             <form style={{ position: "relative" }}>
+            <button type="button" className="btn btn-secondary btn-sm float-right" data-toggle="collapse" data-target="#searchFields" aria-expanded="true" aria-controls="searchFields"><span className="fa fa-chevron-up"></span></button>
               <p className="h2">Search by cases</p>
-              <SearchFields />
-              <AdvancedSearchFields
-                startDate={this.state.startDate}
-                startDate2={this.state.startDate2}
-                startDate3={this.state.startDate3}
-                handleChange={this.handleChange}
-                handleChange2={this.handleChange2}
-                handleChange3={this.handleChange3}
-              />
+              
+              <div id="searchFields" className="collapse show"> 
+              {this.state.showSearch}
+                <SearchFields />
+                <AdvancedSearchFields
+                  startDate={this.state.startDate}
+                  startDate2={this.state.startDate2}
+                  startDate3={this.state.startDate3}
+                  handleChange={this.handleChange}
+                  handleChange2={this.handleChange2}
+                  handleChange3={this.handleChange3}
+                />
+              
               <a
                 id="advSearch"
                 className="btn-advSearch btn btn-lg"
@@ -93,11 +99,14 @@ class App extends Component {
               <button
                 type="submit"
                 onClick={this.displayTable}
+                data-toggle="collapse"
+                data-target="#searchFields"
                 className="btn btn-primary float-right"
               >
                 Search&nbsp;
                 <span className="fa fa-search" />
               </button>
+              </div>
             </form>
           </div>
         </div>
