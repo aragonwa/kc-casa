@@ -10,6 +10,7 @@
     "react": "^16.0.0",
     "react-datepicker": "^0.60.2",
     "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
     "react-scripts": "1.0.14"
   },
   "scripts": {
@@ -23,5 +24,6 @@
     "eject": "react-scripts eject",
     "serve": "serve -s build",
     "deploy": "surge build kc-casa.surge.sh"
-  }
+  },
+  "devDependencies": {}
 }
