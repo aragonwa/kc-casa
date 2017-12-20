@@ -20,17 +20,18 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>CASA Information System</title>
 </head>
 
-<body style="background-image: url('http://lorempixel.com/1920/507/people');">
+<body>
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#"><img class="img-fluid" height="40" width="40" src="logo.png"/></a>
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid" height="40" width="40" src="logo.png" />CASA Information System</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -38,9 +39,9 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
+
         <li class="nav-item active dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="caseDropdown" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Case
+          <a class="nav-link dropdown-toggle" href="#" id="caseDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Case
             <span class="sr-only">(current)</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="caseDropdown">
@@ -52,8 +53,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="casaDropdown" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">CASA</a>
+          <a class="nav-link dropdown-toggle" href="#" id="casaDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CASA</a>
           <div class="dropdown-menu" aria-labelledby="casaDropdown">
             <a class="dropdown-item" href="#">Manage CASA</a>
             <a class="dropdown-item" href="#">Add CASA</a>
@@ -61,8 +61,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="eventDropdown" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Event</a>
+          <a class="nav-link dropdown-toggle" href="#" id="eventDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Event</a>
           <div class="dropdown-menu" aria-labelledby="eventDropdown">
             <a class="dropdown-item" href="#">Manage events</a>
             <a class="dropdown-item" href="#">Add events</a>
@@ -77,9 +76,9 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
-            <div id="root"></div>
+          <div id="root"></div>
         </div>
-       
+
       </div>
 
     </div>
@@ -90,8 +89,7 @@
     crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
