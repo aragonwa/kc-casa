@@ -7,7 +7,7 @@ const ResultsTable = props => {
     <div className={props.displayTable ? "" : "d-none"} id="results">
       <h3>Results</h3>
       <div className="hi">
-        <table className="table table-striped table-bordered table-responsive-sm">
+        <table className="table table-striped table-bordered table-responsive-sm table-hover">
           <thead>
             <tr>
               <th scope="col">Legal number</th>
@@ -32,7 +32,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 1</td>
-              <td>Active</td>
+              <td>4567</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -50,7 +50,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 2</td>
-              <td>Active</td>
+              <td>1111</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -68,7 +68,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 3</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -86,7 +86,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 4</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -104,7 +104,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 5</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -122,7 +122,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 6</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -140,7 +140,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 7</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -158,7 +158,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 8</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -176,7 +176,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 9</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
@@ -194,7 +194,7 @@ const ResultsTable = props => {
                 </button>
               </td>
               <td>Child 10</td>
-              <td>Active</td>
+              <td>5678</td>
               <td>1234</td>
               <td>CASA</td>
               <td>Primary phone</td>
