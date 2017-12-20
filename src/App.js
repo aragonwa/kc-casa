@@ -18,6 +18,7 @@ class App extends Component {
     this.state = {
       activeBtn: "Case",
       displayTable: false,
+      showAdvSearchText: true,
       startDate: null,
       startDate2: null,
       startDate3: null
@@ -27,6 +28,7 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
     this.handleChange3 = this.handleChange3.bind(this);
+    this.toggleAdvSearchText = this.toggleAdvSearchText.bind(this);
   }
   componentDidUpdate(prevProps, prevState) {
     document.getElementById("results").scrollIntoView({ behavior: "smooth" });
@@ -37,6 +39,10 @@ class App extends Component {
   displayTable(e) {
     e.preventDefault();
     this.setState({ displayTable: true });
+  }
+  toggleAdvSearchText(e) {
+    e.preventDefault();
+    this.setState({ showAdvSearchText: !this.state.showAdvSearchText });
   }
   handleChange(date) {
     this.setState({
@@ -56,30 +62,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div
-          className="btn-group btn-group-lg special"
-          role="group"
-          aria-label="Basic example"
-        />
         <div className="card bg-light">
-          <div className="card-header">
-            <h1>CASA Information System</h1>
-          </div>
+         
           <div className="card-body">
             <form style={{ position: "relative" }}>
-              <a
-                className="btn-advSearch btn btn-lg"
-                data-toggle="collapse"
-                href="#collapseAdvancedSearch"
-                aria-expanded="false"
-                aria-controls="collapseAdvancedSearch"
-                data-original-title="Toggle advance search"
-              >
-                <span className="badge badge-pill badge-dark">
-                  Advanced &nbsp;
-                  <span className="fa fa-cog" />
-                </span>
-              </a>
               <p className="h2">Search by cases</p>
               <SearchFields />
               <AdvancedSearchFields
@@ -90,6 +76,20 @@ class App extends Component {
                 handleChange2={this.handleChange2}
                 handleChange3={this.handleChange3}
               />
+              <a
+                id="advSearch"
+                className="btn-advSearch btn btn-lg"
+                data-toggle="collapse"
+                href="#collapseAdvancedSearch"
+                aria-expanded="false"
+                aria-controls="collapseAdvancedSearch"
+                data-original-title="Toggle advance search"
+                onClick={this.toggleAdvSearchText}
+              >
+                <span className="badge badge-pill badge-dark">
+                  {this.state.showAdvSearchText ? "Advanced Search" : "Basic Search"}
+                </span>
+              </a>
               <button
                 type="submit"
                 onClick={this.displayTable}
