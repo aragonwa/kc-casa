@@ -6,14 +6,14 @@ const SearchFields = () => {
       <div className="form-row">
         <div className="col-sm-6">
           <div className="form-group">
-            <label htmlFor="inputLastName">Last Name</label>
-            <input type="text" className="form-control" id="inputLastName" />
+            <label htmlFor="inputFirstName">First Name</label>
+            <input type="text" className="form-control" id="inputFirstName" />
           </div>
         </div>
         <div className="col-sm-6">
           <div className="form-group">
-            <label htmlFor="inputFirstName">First Name</label>
-            <input type="text" className="form-control" id="inputFirstName" />
+            <label htmlFor="inputLastName">Last Name</label>
+            <input type="text" className="form-control" id="inputLastName" />
           </div>
         </div>
       </div>
