@@ -5,9 +5,46 @@ const DetailsModal = () => {
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
         <div className="modal-header">
-          <h5 className="modal-title" id="exampleModalLongTitle">
-            Case number 1234
-          </h5>
+          <div className="row">
+            <div className="col-sm-12" >
+              <h5 className="modal-title" id="exampleModalLongTitle">
+                Case number 1234
+              </h5>
+              
+            </div>
+            <div className="col-sm-12">
+            <hr />
+            </div>
+
+              <div className="col-sm">
+                <dl className="row">
+                  <dt className="col-sm-4">Child name</dt>
+                  <dd className="col-sm-8">Joe Smith</dd>
+                  <dt className="col-sm-4">Gender</dt>
+                  <dd className="col-sm-8">Male</dd>
+                  <dt className="col-sm-4">Age</dt>
+                  <dd className="col-sm-8">15</dd>
+                  <dt className="col-sm-4">Birthday</dt>
+                  <dd className="col-sm-8">1/1/2017</dd>
+                  <dt className="col-sm-4">Ethnicity</dt>
+                  <dd className="col-sm-8">White</dd>
+                </dl>
+              </div>
+              <div className="col-sm">
+                <dl className="row">
+                  <dt className="col-sm-4">Child age at file</dt>
+                  <dd className="col-sm-8">7 years 5 months</dd>
+                  <dt className="col-sm-4">Legal number</dt>
+                  <dd className="col-sm-8">00-7-00305-4</dd>
+                  <dt className="col-sm-4">Pending number</dt>
+                  <dd className="col-sm-8">1111</dd>
+                  <dt className="col-sm-4">Case number</dt>
+                  <dd className="col-sm-8">22222</dd>
+                  <dt className="col-sm-4">Case Status</dt>
+                  <dd className="col-sm-8">Active</dd>
+                </dl>
+              </div>
+          </div>
           <button
             type="button"
             className="close"
@@ -17,37 +54,8 @@ const DetailsModal = () => {
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div className="modal-body">
-          <div className="row">
-            <div className="col-sm-6">
-              <dl className="row">
-                <dt className="col-sm-4">Child name</dt>
-                <dd className="col-sm-8">Joe Smith</dd>
-                <dt className="col-sm-4">Gender</dt>
-                <dd className="col-sm-8">Male</dd>
-                <dt className="col-sm-4">Age</dt>
-                <dd className="col-sm-8">15</dd>
-                <dt className="col-sm-4">Birthday</dt>
-                <dd className="col-sm-8">1/1/2017</dd>
-                <dt className="col-sm-4">Ethnicity</dt>
-                <dd className="col-sm-8">White</dd>
-              </dl>
-            </div>
-            <div className="col-sm-6">
-              <dl className="row">
-                <dt className="col-sm-4">Child age at file</dt>
-                <dd className="col-sm-8">7 years 5 months</dd>
-                <dt className="col-sm-4">Legal number</dt>
-                <dd className="col-sm-8">00-7-00305-4</dd>
-                <dt className="col-sm-4">Pending number</dt>
-                <dd className="col-sm-8">1111</dd>
-                <dt className="col-sm-4">Case number</dt>
-                <dd className="col-sm-8">22222</dd>
-                <dt className="col-sm-4">Case Status</dt>
-                <dd className="col-sm-8">Active</dd>
-              </dl>
-            </div>
-          </div>
+        <div className="modal-body" style={{paddingTop: "0px"}}>
+          
           <div className="row">
             <div className="col-12" style={{ paddingRight: 0, paddingLeft: 0 }}>
               <div id="accordion" role="tablist">
@@ -245,6 +253,8 @@ const DetailsModal = () => {
                           </tr>
                         </tbody>
                       </table>
+                      <a className="btn btn-primary float-right" href="/add-person" target="_blank">Add person</a>
+                      <br />
                     </div>
                   </div>
                 </div>
