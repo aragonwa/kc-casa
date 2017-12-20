@@ -5866,14 +5866,10 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important; }
 
 body {
-  padding-top: 4.5rem;
-  background-repeat: no-repeat;
-  background-size: 100% auto; }
+  padding-top: 4.5rem; }
 
 .card-body .btn-advSearch {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
   z-index: 10;
   display: block;
   padding: .25rem .5rem;
@@ -5881,6 +5877,9 @@ body {
   background-color: transparent;
   border: 0;
   border-radius: .25rem; }
+
+#accordion .card {
+  border-radius: 0; }
 
 .btn-group.special {
   display: flex; }

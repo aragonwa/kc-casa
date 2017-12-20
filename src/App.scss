@@ -2,22 +2,20 @@
 
 body {
   padding-top:4.5rem;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 }
 .card-body .btn-advSearch {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
   z-index: 10;
   display: block;
   padding: .25rem .5rem;
-  // font-size: 75%;
-  // color: #818a91;
   cursor: pointer;
   background-color: transparent;
   border: 0;
   border-radius: .25rem;
+}
+
+#accordion .card {
+  border-radius: 0;
 }
 
 .btn-group.special {
