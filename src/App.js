@@ -1,14 +1,9 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import ResultsTable from "./components/Results";
+import Features from "./components/Features";
 
-import SearchFields from "./SearchFields";
-import AdvancedSearchFields from "./AdvancedSearchFields";
-import ResultsTable from "./ResultsTable";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "../node_modules/bootstrap/scss/bootstrap.scss";
-
-import "bootstrap";
-
-// import moment from 'moment';
 import "react-datepicker/dist/react-datepicker.css";
 import "./App.css";
 
@@ -21,24 +16,35 @@ class App extends Component {
       showAdvSearchText: true,
       startDate: null,
       startDate2: null,
-      startDate3: null
+      startDate3: null,
+      collapseSearch: true,
+      searchNavText: "",
+      searchingText: ""
     };
     this.setActiveButton = this.setActiveButton.bind(this);
-    this.displayTable = this.displayTable.bind(this);
+    this.toggleDisplayTable = this.toggleDisplayTable.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
     this.handleChange3 = this.handleChange3.bind(this);
     this.toggleAdvSearchText = this.toggleAdvSearchText.bind(this);
+    this.collapseBtn = this.collapseBtn.bind(this);
+    this.searchNav = this.searchNav.bind(this);
+    this.searchNavChange = this.searchNavChange.bind(this);
   }
   componentDidUpdate(prevProps, prevState) {
     // document.getElementById("results").scrollIntoView({ behavior: "smooth" });
   }
   setActiveButton(btnText) {
-    this.setState({ activeBtn: btnText});
+    this.setState({ activeBtn: btnText });
   }
-  displayTable(e) {
-    e.preventDefault();
-    this.setState({displayTable: true});
+  toggleDisplayTable(e) {
+    if (e) {
+      e.preventDefault();
+    }
+    this.setState({
+      displayTable: true,
+      collapseSearch: !this.state.collapseSearch
+    });
   }
   toggleAdvSearchText(e) {
     e.preventDefault();
@@ -59,62 +65,50 @@ class App extends Component {
       startDate4: date
     });
   }
+  collapseBtn() {
+    this.setState({
+      collapseSearch: !this.state.collapseSearch
+    });
+  }
+  searchNavChange(e) {
+    this.setState({
+      searchNavText: e.target.value
+    });
+  }
+  searchNav(e) {
+    e.preventDefault();
+    const numPattern = /^\d+$/;
+    const inputStr = this.state.searchNavText;
+    const result = inputStr.match(numPattern)
+      ? "case number " + this.state.searchNavText
+      : "name " + this.state.searchNavText;
+    this.setState({
+      searchingText: result
+    });
+    this.toggleDisplayTable();
+  }
 
   render() {
     return (
       <div className="App">
-        <div className="card bg-light">
-         
-          <div className="card-body">
-            <form style={{ position: "relative" }}>
-            <button type="button" className="btn btn-secondary btn-sm float-right" data-toggle="collapse" data-target="#searchFields" aria-expanded="true" aria-controls="searchFields"><span className="fa fa-chevron-up"></span></button>
-              <p className="h2">Search by cases</p>
-              
-              <div id="searchFields" className="collapse show"> 
-              {this.state.showSearch}
-                <SearchFields />
-                <AdvancedSearchFields
-                  startDate={this.state.startDate}
-                  startDate2={this.state.startDate2}
-                  startDate3={this.state.startDate3}
-                  handleChange={this.handleChange}
-                  handleChange2={this.handleChange2}
-                  handleChange3={this.handleChange3}
-                />
-              
-              <a
-                id="advSearch"
-                className="btn-advSearch btn btn-lg"
-                data-toggle="collapse"
-                href="#collapseAdvancedSearch"
-                aria-expanded="false"
-                aria-controls="collapseAdvancedSearch"
-                data-original-title="Toggle advance search"
-                onClick={this.toggleAdvSearchText}
-              >
-                <span className="badge badge-pill badge-dark">
-                  {this.state.showAdvSearchText ? "Advanced Search" : "Basic Search"}
-                </span>
-              </a>
-              <button
-                type="submit"
-                onClick={this.displayTable}
-                data-toggle="collapse"
-                data-target="#searchFields"
-                className="btn btn-primary float-right"
-              >
-                Search&nbsp;
-                <span className="fa fa-search" />
-              </button>
+        <Nav
+          searchNav={this.searchNav}
+          searchNavText={this.state.searchNavText}
+          searchNavChange={this.searchNavChange}
+        />
+        <main role="main">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-12">
+                <ResultsTable 
+                  searchNavText={this.state.searchingText}
+                  displayTable={this.state.displayTable} />
               </div>
-            </form>
+        
+              {!this.state.displayTable && <Features />}
+            </div>
           </div>
-        </div>
-        <br />
-        <br />
-        <br />
-
-        <ResultsTable displayTable={this.state.displayTable} />
+        </main>
       </div>
     );
   }

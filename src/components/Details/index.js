@@ -1,49 +1,49 @@
 import React from "react";
+import EditExample from '../EditExample'
 
-const DetailsModal = () => {
+const Details = () => {
   return (
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
         <div className="modal-header">
           <div className="row">
-            <div className="col-sm-12" >
+            <div className="col-sm-12">
               <h5 className="modal-title" id="exampleModalLongTitle">
                 Case number 1234
               </h5>
-              
             </div>
             <div className="col-sm-12">
-            <hr />
+              <hr />
             </div>
 
-              <div className="col-sm">
-                <dl className="row">
-                  <dt className="col-sm-4">Child name</dt>
-                  <dd className="col-sm-8">Joe Smith</dd>
-                  <dt className="col-sm-4">Gender</dt>
-                  <dd className="col-sm-8">Male</dd>
-                  <dt className="col-sm-4">Age</dt>
-                  <dd className="col-sm-8">15</dd>
-                  <dt className="col-sm-4">Birthday</dt>
-                  <dd className="col-sm-8">1/1/2017</dd>
-                  <dt className="col-sm-4">Ethnicity</dt>
-                  <dd className="col-sm-8">White</dd>
-                </dl>
-              </div>
-              <div className="col-sm">
-                <dl className="row">
-                  <dt className="col-sm-4">Child age at file</dt>
-                  <dd className="col-sm-8">7 years 5 months</dd>
-                  <dt className="col-sm-4">Legal number</dt>
-                  <dd className="col-sm-8">00-7-00305-4</dd>
-                  <dt className="col-sm-4">Pending number</dt>
-                  <dd className="col-sm-8">1111</dd>
-                  <dt className="col-sm-4">Case number</dt>
-                  <dd className="col-sm-8">22222</dd>
-                  <dt className="col-sm-4">Case Status</dt>
-                  <dd className="col-sm-8">Active</dd>
-                </dl>
-              </div>
+            <div className="col-sm">
+              <dl className="row">
+                <dt className="col-sm-4">Child name</dt>
+                <dd className="col-sm-8">Joe Smith</dd>
+                <dt className="col-sm-4">Gender</dt>
+                <dd className="col-sm-8">Male</dd>
+                <dt className="col-sm-4">Age</dt>
+                <dd className="col-sm-8">15</dd>
+                <dt className="col-sm-4">Birthday</dt>
+                <dd className="col-sm-8">1/1/2017</dd>
+                <dt className="col-sm-4">Ethnicity</dt>
+                <dd className="col-sm-8">White</dd>
+              </dl>
+            </div>
+            <div className="col-sm">
+              <dl className="row">
+                <dt className="col-sm-4">Child age at file</dt>
+                <dd className="col-sm-8">7 years 5 months</dd>
+                <dt className="col-sm-4">Legal number</dt>
+                <dd className="col-sm-8">00-7-00305-4</dd>
+                <dt className="col-sm-4">Pending number</dt>
+                <dd className="col-sm-8">1111</dd>
+                <dt className="col-sm-4">Case number</dt>
+                <dd className="col-sm-8">22222</dd>
+                <dt className="col-sm-4">Case Status</dt>
+                <dd className="col-sm-8">Active</dd>
+              </dl>
+            </div>
           </div>
           <button
             type="button"
@@ -54,8 +54,7 @@ const DetailsModal = () => {
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div className="modal-body" style={{paddingTop: "0px"}}>
-          
+        <div className="modal-body" style={{ paddingTop: "0px" }}>
           <div className="row">
             <div className="col-12" style={{ paddingRight: 0, paddingLeft: 0 }}>
               <div id="accordion" role="tablist">
@@ -108,7 +107,7 @@ const DetailsModal = () => {
                               <dt>Case type</dt>
                               <dd>Drugs</dd>
                               <dt>Active sub status</dt>
-                              <dd></dd>
+                              <dd />
                               <dt>ICWA</dt>
                               <dd>Unknown</dd>
                               <dt>File location</dt>
@@ -157,7 +156,6 @@ const DetailsModal = () => {
                             <dd>06/01/2000</dd>
                             <dt>Dad Dep. Est. Date</dt>
                             <dd>01/01/2000</dd>
-
                           </div>
                         </div>
                         <div className="card">
@@ -165,15 +163,26 @@ const DetailsModal = () => {
                             Notes
                           </div>
                           <div className="card-body">
-                            <p>Lorem ipsum dolor sit amet, sanctus voluptatibus mel cu, eu nam enim dicat everti. Ex pri choro nonumes, exerci disputando complectitur mei ut, qui dicat petentium in. Graecis apeirian neglegentur cu his. Per cu alii solum probatus. Quodsi habemus invidunt at his, ullum erant laboramus eu duo.
+                            <p>
+                              Lorem ipsum dolor sit amet, sanctus voluptatibus
+                              mel cu, eu nam enim dicat everti. Ex pri choro
+                              nonumes, exerci disputando complectitur mei ut,
+                              qui dicat petentium in. Graecis apeirian
+                              neglegentur cu his. Per cu alii solum probatus.
+                              Quodsi habemus invidunt at his, ullum erant
+                              laboramus eu duo.
                             </p>
-                            <p>At nec solum error, tantas quodsi vis ex. Mucius albucius legendos his et. Mel in sale bonorum scaevola. An animal labitur tacimates sit, eos veniam fierent deterruisset id, in impetus invenire efficiendi his. Duo velit albucius lobortis no.
-
+                            <p>
+                              At nec solum error, tantas quodsi vis ex. Mucius
+                              albucius legendos his et. Mel in sale bonorum
+                              scaevola. An animal labitur tacimates sit, eos
+                              veniam fierent deterruisset id, in impetus
+                              invenire efficiendi his. Duo velit albucius
+                              lobortis no.
                             </p>
                           </div>
                         </div>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -225,41 +234,51 @@ const DetailsModal = () => {
                             <td>AAG</td>
                             <td>mary@email.com</td>
                             <td>201-222-2222</td>
-                            <td></td>
+                            <td />
                             <td>201-222-2222</td>
-                            <td></td>
+                            <td />
                           </tr>
                           <tr>
-                          <td>Child Attorney</td>
-                          <td>Meg</td>
-                          <td>While</td>
-                          <td>Defenders</td>
-                          <td>Meg@email.com</td>
-                          <td>201-222-2222</td>
-                          <td></td>
-                          <td>201-222-2222</td>
-                          <td>111 First Rd</td>
+                            <td>Child Attorney</td>
+                            <td>Meg</td>
+                            <td>While</td>
+                            <td>Defenders</td>
+                            <td>Meg@email.com</td>
+                            <td>201-222-2222</td>
+                            <td />
+                            <td>201-222-2222</td>
+                            <td>111 First Rd</td>
                           </tr>
                           <tr>
-                          <td>Social worker</td>
-                          <td>Bob</td>
-                          <td>Vance</td>
-                          <td>DCHS</td>
-                          <td>bob@email.com</td>
-                          <td>201-222-2222</td>
-                          <td></td>
-                          <td>201-222-2222</td>
-                          <td></td>
+                            <td>Social worker</td>
+                            <td>Bob</td>
+                            <td>Vance</td>
+                            <td>DCHS</td>
+                            <td>bob@email.com</td>
+                            <td>201-222-2222</td>
+                            <td />
+                            <td>201-222-2222</td>
+                            <td />
                           </tr>
                         </tbody>
                       </table>
-                      <a className="btn btn-primary float-right" href="/add-person" target="_blank">Add person</a>
+                      <a
+                        className="btn btn-primary float-right"
+                        href="/add-person"
+                        target="_blank"
+                      >
+                        Add person
+                      </a>
                       <br />
                     </div>
                   </div>
                 </div>
                 <div className="card">
-                  <div className="card-header" role="tab" id="headingAddRemoveCASA">
+                  <div
+                    className="card-header"
+                    role="tab"
+                    id="headingAddRemoveCASA"
+                  >
                     <h5 className="mb-0">
                       <a
                         className="collapsed"
@@ -280,17 +299,7 @@ const DetailsModal = () => {
                     data-parent="#accordion"
                   >
                     <div className="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      <EditExample />
                     </div>
                   </div>
                 </div>
@@ -331,7 +340,11 @@ const DetailsModal = () => {
                   </div>
                 </div>
                 <div className="card">
-                  <div className="card-header" role="tab" id="headingIntakeDetail">
+                  <div
+                    className="card-header"
+                    role="tab"
+                    id="headingIntakeDetail"
+                  >
                     <h5 className="mb-0">
                       <a
                         className="collapsed"
@@ -439,7 +452,11 @@ const DetailsModal = () => {
                   </div>
                 </div>
                 <div className="card">
-                  <div className="card-header" role="tab" id="headingCaseStatusHistory">
+                  <div
+                    className="card-header"
+                    role="tab"
+                    id="headingCaseStatusHistory"
+                  >
                     <h5 className="mb-0">
                       <a
                         className="collapsed"
@@ -475,7 +492,11 @@ const DetailsModal = () => {
                   </div>
                 </div>
                 <div className="card">
-                  <div className="card-header" role="tab" id="headingCasaHistory">
+                  <div
+                    className="card-header"
+                    role="tab"
+                    id="headingCasaHistory"
+                  >
                     <h5 className="mb-0">
                       <a
                         className="collapsed"
@@ -600,4 +621,4 @@ const DetailsModal = () => {
   );
 };
 
-export default DetailsModal;
+export default Details;

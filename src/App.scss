@@ -2,6 +2,9 @@
 
 body {
   padding-top:4.5rem;
+  @media (min-width: 576px) {
+    padding-top:5.5rem;
+  }
 }
 .card-body .btn-advSearch {
   position: absolute;

@@ -1,16 +1,17 @@
 import React from "react";
-import DetailsModal from "./DetailsModal";
-import Pagination from "./Pagination";
+import DetailsModal from "../Details";
+import DetailsModalTabs from "../Details/Tabs";
+import Pagination from "../Pagination";
 
-const ResultsTable = props => {
+const Results = props => {
   return (
     <div className={props.displayTable ? "" : "d-none"} id="results">
-      <h3>Results</h3>
-      <div className="hi">
+      <h3>Results for {props.searchNavText}</h3>
+      <div>
         <table className="table table-striped table-bordered table-responsive-sm table-hover">
           <thead>
             <tr>
-              <th scope="col">Legal number</th>
+              <th scope="col">Case Number</th>
               <th scope="col">Child Name</th>
               <th scope="col">Pending number</th>
               <th scope="col">Case number</th>
@@ -31,7 +32,11 @@ const ResultsTable = props => {
                   00-0-00000-0
                 </button>
               </td>
-              <td>Child 1</td>
+              <td>
+                <a data-toggle="modal" href="#modalResult2">
+                  Tabs version
+                </a>
+              </td>
               <td>4567</td>
               <td>1234</td>
               <td>CASA</td>
@@ -215,8 +220,18 @@ const ResultsTable = props => {
       >
         <DetailsModal />
       </div>
+      <div
+        className="modal fade"
+        id="modalResult2"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true"
+      >
+        <DetailsModalTabs />
+      </div>
     </div>
   );
 };
 
-export default ResultsTable;
+export default Results;
