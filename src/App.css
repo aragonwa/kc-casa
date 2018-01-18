@@ -6035,8 +6035,11 @@ body {
   .modal-dialog {
     max-width: 80%; } }
 
+.modal-content {
+  max-height: 100vh; }
+
 .modal-body {
-  max-height: calc(100vh - 210px);
+  max-height: calc(100vh - 280px);
   overflow-y: auto; }
 
 .container-fluid {
@@ -6045,3 +6048,11 @@ body {
 
 .react-datepicker-wrapper, .react-datepicker__input-container {
   display: block; }
+
+.modal.show .modal-content .modal-body .nav.nav-tabs.nav-fill .nav-item.nav-link {
+  background-color: #808080 !important;
+  color: #ffffff; }
+
+.modal.show .modal-content .modal-body .nav.nav-tabs.nav-fill .nav-item.nav-link.active {
+  background-color: #FFFFFF !important;
+  color: #000000; }

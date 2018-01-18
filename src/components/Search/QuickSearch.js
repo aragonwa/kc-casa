@@ -13,6 +13,7 @@ export default class QuickSearch extends Component {
             className="form-control"
             type="text"
             id="search-nav-input"
+            name="search-nav-input"
             placeholder="Search by name or case number"
             aria-label="Search by name or case number"
             value={this.props.searchNavText}

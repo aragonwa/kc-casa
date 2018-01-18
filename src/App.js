@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import ResultsTable from "./components/Results";
 import Features from "./components/Features";
@@ -34,6 +33,7 @@ class App extends Component {
   componentDidUpdate(prevProps, prevState) {
     // document.getElementById("results").scrollIntoView({ behavior: "smooth" });
   }
+
   setActiveButton(btnText) {
     this.setState({ activeBtn: btnText });
   }

@@ -15,7 +15,7 @@ class EditExample extends Component {
       status: "A",
       address: "1234 First Street",
       city: "Seattle",
-      state: "WA",
+      addressState: "WA",
       zipCode: "98104"
     };
     this.toggleEdit = this.toggleEdit.bind(this);
@@ -55,7 +55,7 @@ class EditExample extends Component {
         this.setState({ city: e.target.value });
         break;
       case 8:
-        this.setState({ state: e.target.value });
+        this.setState({ addressState: e.target.value });
         break;
       case 9:
         this.setState({ zipCode: e.target.value });
@@ -176,9 +176,8 @@ class EditExample extends Component {
                 disabled={this.state.editOn ? false : true}
                 className="form-control"
                 id="inputState"
-                value={this.state.state}
                 onChange={e => this.setProp(e, 8)}
-                value={this.state.state}
+                value={this.state.addressState}
               >
                 <option value="">[Select]</option>
                 <option value="AL">Alabama</option>
